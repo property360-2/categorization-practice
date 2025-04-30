@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #1a1a2e;
+  --text-color: #ffffff;
+  --highlight: #ffcc00;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-dropdown {
+  display: block;
+  margin: 20px auto;
+  padding: 8px;
+  border: 2px solid var(--highlight);
+  border-radius: 4px;
+  width: 200px;
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  padding: 15px;
+  border-radius: 8px;
+  width: 180px;
+  border: 3px solid var(--highlight);
+  text-align: center;
+}
